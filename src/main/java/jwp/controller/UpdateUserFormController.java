@@ -13,7 +13,7 @@ import java.io.IOException;
 
 @WebServlet("/user/updateForm")
 public class UpdateUserFormController extends HttpServlet {
-    //todo update면 post가 아니라..patch?
+    //todo update면 post가 아니라 patch?
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userId = req.getParameter("userId");
@@ -27,7 +27,6 @@ public class UpdateUserFormController extends HttpServlet {
             resp.sendRedirect("/");
             return;
         }
-
         req.setAttribute("user", loginUser);
         RequestDispatcher rd = req.getRequestDispatcher("/user/updateForm.jsp");
         rd.forward(req, resp);

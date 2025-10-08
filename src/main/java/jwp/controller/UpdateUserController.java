@@ -14,6 +14,7 @@ import java.io.IOException;
 public class UpdateUserController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         User updateUser = new User(req.getParameter("userId"),
                 req.getParameter("password"),
                 req.getParameter("name"),
