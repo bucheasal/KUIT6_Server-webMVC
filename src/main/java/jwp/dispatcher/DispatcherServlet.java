@@ -5,11 +5,14 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 import jwp.controller.Controller;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
+
+import static core.url.Method.*;
 
 @WebServlet("/")
 public class DispatcherServlet extends HttpServlet {
@@ -33,10 +36,11 @@ public class DispatcherServlet extends HttpServlet {
         }
         try {
             String viewName = controller.proceed(req, resp);
+            System.out.println("viewName = " + viewName);
             if (viewName == null)
                 return;
-            if (viewName.startsWith("redirect:")) {
-                String target = viewName.substring("redirect:".length());
+            if (viewName.startsWith(REDIRECT.method)) {
+                String target = viewName.substring(REDIRECT.method.length());
                 resp.sendRedirect(ctx + target);
                 return;
             } else {

@@ -5,23 +5,23 @@ import jwp.controller.*;
 import java.util.HashMap;
 import java.util.Map;
 
+import static core.url.UrlPath.*;
+
 public class RequestMapper {
-    private static Map<String, Controller> controller = new HashMap<>();
-    private static RequestMapper requestMapper = new RequestMapper();
-    //싱글톤으로 해야하기 때문
+    private static final Map<String, Controller> controller = new HashMap<>();
+    private static final RequestMapper requestMapper = new RequestMapper();
     private RequestMapper() {
-        controller.put("", new HomeController());
-        controller.put("/", new HomeController());
-        controller.put("/user/signup", new CreateUserController());
-        controller.put("/user/list", new ListUserController());
-        controller.put("/user/login", new LoginController());
-        controller.put("/user/logout", new LogoutController());
-        controller.put("/user/update", new UpdateUserController());
-        controller.put("/user/updateForm", new UpdateUserFormController());
-        controller.put("/user/loginFailed", new LoginFailedController());
+        controller.put(EMPTY.route, new HomeController());
+        controller.put(HOME.route, new HomeController());
+        controller.put(SIGNUP.route, new CreateUserController());
+        controller.put(LIST.route, new ListUserController());
+        controller.put(LOGIN.route, new LoginController());
+        controller.put(LOGOUT.route, new LogoutController());
+        controller.put(UPDATE.route, new UpdateUserController());
+        controller.put(UPDATEFORM.route, new UpdateUserFormController());
+        controller.put(LOGINFAILED.route, new LoginFailedController());
     }
 
-    //싱글톤 방식으로 강제하는 방법
     public static RequestMapper getRequestMapper() {
         return requestMapper;
     }
