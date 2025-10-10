@@ -1,16 +1,13 @@
 package jwp.controller;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class HomeController implements Controller{
+public class LoginFailedController implements Controller {
     @Override
     public String proceed(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        return "home";
+        return "/user/loginFailed";
     }
 }
