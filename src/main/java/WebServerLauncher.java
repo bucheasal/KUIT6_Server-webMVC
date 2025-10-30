@@ -1,6 +1,5 @@
 import org.apache.catalina.startup.Tomcat;
 
-
 import java.io.File;
 import java.util.logging.Logger;
 

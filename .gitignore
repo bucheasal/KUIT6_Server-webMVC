@@ -11,4 +11,5 @@ gen
 build
 
 # 자동생성 폴더
-/tomcat.8080/
+/tomcat.8080/!/java-webMVC.ipr
+/java-webMVC.iws
