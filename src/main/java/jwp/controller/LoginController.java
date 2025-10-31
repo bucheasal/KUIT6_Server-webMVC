@@ -1,6 +1,5 @@
 package jwp.controller;
 
-import core.db.MemoryUserRepository;
 import core.mvc.Controller;
 import jwp.dao.UserDao;
 import jwp.model.User;
@@ -17,7 +16,6 @@ public class LoginController implements Controller {
         String password = req.getParameter("password");
 
         User loginUser = new User(userId, password);
-//        User user = MemoryUserRepository.getInstance().findUserById(userId);
         User user = UserDao.getInstance().findByUserId(userId);
         if (user != null && user.isSameUser(loginUser)) {
             session.setAttribute("user", user);

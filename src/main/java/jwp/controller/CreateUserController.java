@@ -1,6 +1,5 @@
 package jwp.controller;
 
-import core.db.MemoryUserRepository;
 import core.mvc.Controller;
 import jwp.dao.UserDao;
 import jwp.model.User;
@@ -15,7 +14,6 @@ public class CreateUserController implements Controller {
                 req.getParameter("password"),
                 req.getParameter("name"),
                 req.getParameter("email"));
-//        MemoryUserRepository.getInstance().addUser(user);
         UserDao.getInstance().insert(user);
         System.out.println("user 회원가입 완료");
         return "redirect:/user/list";
