@@ -2,6 +2,7 @@ package jwp.controller;
 
 import core.db.MemoryUserRepository;
 import core.mvc.Controller;
+import jwp.dao.UserDao;
 import jwp.model.User;
 
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +17,8 @@ public class UpdateUserController implements Controller {
                 req.getParameter("password"),
                 req.getParameter("name"),
                 req.getParameter("email"));
-        MemoryUserRepository.getInstance().update(modifiedUser);
+//        MemoryUserRepository.getInstance().update(modifiedUser);
+        UserDao.getInstance().update(modifiedUser);
         return "redirect:/user/list";
     }
 }

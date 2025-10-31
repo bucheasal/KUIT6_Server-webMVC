@@ -5,9 +5,20 @@ import jwp.model.User;
 
 import java.util.List;
 
-import static jwp.dao.QueryEnum.*;
+import static jwp.dao.UserQueryEnum.*;
 
 public class UserDao {
+    private static UserDao userDao;
+    private UserDao() {}
+
+    public static UserDao getInstance() {
+        if (userDao == null) {
+            userDao = new UserDao();
+            return userDao;
+        }
+        return userDao;
+    }
+
     public void insert(User user) {
         PreparedStatementSetter pstmtSetter = pstmt ->{
         pstmt.setString(1, user.getUserId());

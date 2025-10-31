@@ -1,6 +1,7 @@
 package core.mvc;
 
 import jwp.controller.*;
+import jwp.controller.question.CreateQuestionController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,6 +24,7 @@ public class RequestMapping {
         controllers.put("/user/loginFailed", new ForwardController("/user/loginFailed.jsp"));
 
         controllers.put("/qna/form", new ForwardController("/qna/form.jsp"));
+        controllers.put("/qna/create", new CreateQuestionController());
         controllers.put("/qna/show", new ForwardController("/qna/show.jsp"));
 
     }

@@ -26,7 +26,6 @@ public abstract class SelectJdbcTemplate<T> {
     public T queryForObject(PreparedStatementSetter pstmtSetter, RowMapper<T> rowMapper){
         try (Connection conn = ConnectionManager.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(createSelectQuery())){
-
             pstmtSetter.setParameters(pstmt);
             try(ResultSet rs = pstmt.executeQuery();){
                 T object = null;// 순서 꼬일 수 있어서 안에 넣지 않는다 -> 수동으로 자원 해제

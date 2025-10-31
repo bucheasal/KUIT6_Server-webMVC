@@ -21,7 +21,14 @@ public class DispatcherServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String url = req.getRequestURI();
-        Controller controller = requestMapping.getController(url);
+        String contextPath = req.getContextPath();
+        String path = url.substring(contextPath.length());
+        Controller controller = requestMapping.getController(path);
+        if (controller == null) {
+            System.out.println("No controller found for path = " + path);
+            resp.sendError(HttpServletResponse.SC_NOT_FOUND);
+            return;
+        }
         try {
             String viewName = controller.execute(req, resp);
             move(viewName, req, resp);
@@ -33,7 +40,8 @@ public class DispatcherServlet extends HttpServlet {
 
     private void move(String viewName, HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
         if (viewName.startsWith(REDIRECT_PREFIX)) {
-            resp.sendRedirect(viewName.substring(REDIRECT_PREFIX.length()));
+            String target = req.getContextPath() + viewName.substring(REDIRECT_PREFIX.length());
+            resp.sendRedirect(target);
             return;
         }
         RequestDispatcher rd = req.getRequestDispatcher(viewName);

@@ -2,6 +2,7 @@ package jwp.controller;
 
 import core.db.MemoryUserRepository;
 import core.mvc.Controller;
+import jwp.dao.UserDao;
 import jwp.model.User;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,7 +14,8 @@ public class UpdateUserFormController implements Controller {
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         String userId = req.getParameter("userId");         // 수정되는 user
-        User user = MemoryUserRepository.getInstance().findUserById(userId);
+//        User user = MemoryUserRepository.getInstance().findUserById(userId);
+        User user = UserDao.getInstance().findByUserId(userId);
 
         HttpSession session = req.getSession();                    // 수정하는 user
         Object value = session.getAttribute("user");
