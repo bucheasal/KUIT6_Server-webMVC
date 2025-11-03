@@ -1,91 +1,37 @@
 package jwp.dao;
 
-import core.jdbc.*;
 import jwp.model.User;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 
 import static jwp.dao.UserQueryEnum.*;
 
+@Repository
+@RequiredArgsConstructor
 public class UserDao {
-    private static UserDao userDao;
-    private UserDao() {}
 
-    public static UserDao getInstance() {
-        if (userDao == null) {
-            userDao = new UserDao();
-            return userDao;
-        }
-        return userDao;
-    }
+    private final EntityManager em;
 
+    @Transactional
     public void insert(User user) {
-        PreparedStatementSetter pstmtSetter = pstmt ->{
-        pstmt.setString(1, user.getUserId());
-        pstmt.setString(2, user.getPassword());
-        pstmt.setString(3, user.getName());
-        pstmt.setString(4, user.getEmail());};
-        UpdateJdbcTemplate updateJdbcTemplate = new UpdateJdbcTemplate() {
-            public String createQuery(){
-                return INSERT_USER.sql();
-            }
-        };
-        updateJdbcTemplate.update(pstmtSetter);
+        em.persist(user);
     }
 
     public void update(User user) {
-        PreparedStatementSetter pstmtSetter = pstmt -> {
-            pstmt.setString(1, user.getPassword());
-            pstmt.setString(2, user.getName());
-            pstmt.setString(3, user.getEmail());
-            pstmt.setString(4, user.getUserId());
-        };
-        UpdateJdbcTemplate updateJdbcTemplate = new UpdateJdbcTemplate() {
-            public String createQuery() {
-                return UPDATE_USER.sql();
-            }
-        };
-        updateJdbcTemplate.update(pstmtSetter);
+        em.merge(user);
     }
 
-    public void delete(User user) {
-        PreparedStatementSetter pstmtSetter = pstmt -> {
-            pstmt.setString(1, user.getUserId());
-        };
-        UpdateJdbcTemplate updateJdbcTemplate = new UpdateJdbcTemplate() {
-            public String createQuery() {
-                return DELETE_USER.sql();
-            }
-        };
-        updateJdbcTemplate.update(pstmtSetter);
-    }
 
     public List<User> findAll() {
-        RowMapper<User> rowMapper = rs -> new User(
-                rs.getString("userId"),
-                rs.getString("password"),
-                rs.getString("name"),
-                rs.getString("email"));
-        SelectJdbcTemplate<User> selectJdbcTemplate = new SelectJdbcTemplate() {
-            public String createSelectQuery() {
-                return FIND_ALL_USER.sql();} };
-        return selectJdbcTemplate.query(rowMapper);
+        return em.createQuery("select u from User u", User.class).getResultList();
     }
 
     public User findByUserId(String userId){
-        PreparedStatementSetter pstmtSetter = pstmt->{ pstmt.setString(1, userId); };
-        RowMapper<User> rowMapper = rs -> new User(
-                rs.getString("userId"),
-                rs.getString("password"),
-                rs.getString("name"),
-                rs.getString("email"));
-        SelectJdbcTemplate<User> selectJdbcTemplate = new SelectJdbcTemplate() {
-            public String createSelectQuery() {
-                return FIND_BY_USERID.sql();
-            }
-        };
-        return selectJdbcTemplate.queryForObject(pstmtSetter, rowMapper);
-
+        return em.find(User.class, userId);
     }
 }
 

@@ -1,6 +1,5 @@
 package jwp.controller.question;
 
-import core.mvc.Controller;
 import jwp.dao.QuestionDao;
 import jwp.model.KeyHolder;
 import jwp.model.Question;

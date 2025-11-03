@@ -11,7 +11,8 @@
 
     <div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
         <div class="panel panel-default content-main">
-            <form name="question" method="post" action="/qna/create">
+            <c:url value="/qna/create" var="createUrl"/>
+            <form name="question" method="post" action="${createUrl}">
                 <div class="form-group">
                     <label for="writer">글쓴이</label>
                     <input type="text" class="form-control" value="${sessionScope.user.userId}" id="writer"
@@ -26,13 +27,14 @@
                     <textarea name="contents" id="contents" rows="5" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-success clearfix pull-right">질문하기</button>
-                <div class="clearfix"/>
+                <div class="clearfix"></div>
             </form>
         </div>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../js/scripts.js"></script>
+<c:url value="/js/scripts.js" var="scriptsJs"/>
+<script src="${scriptsJs}"></script>
 </body>
 </html>

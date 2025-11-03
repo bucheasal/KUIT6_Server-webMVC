@@ -1,6 +1,16 @@
 package jwp.model;
 
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "USERS")
+@NoArgsConstructor //JPA는 기본 생성자 필수
 public class User {
+    @Id //primary key
     private String userId;
     private String password;
     private String name;
