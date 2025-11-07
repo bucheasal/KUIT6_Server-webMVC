@@ -4,31 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1884baa1-5422-44dd-8775-e4befca084b5" name="변경" comment="2단계">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="1884baa1-5422-44dd-8775-e4befca084b5" name="변경" comment="6주차">
       <change beforePath="$PROJECT_DIR$/java-webMVC.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-webMVC.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/db/MemoryUserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/db/Repository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/mvc/RequestMapping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/LogoutController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/ShowController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/QuestionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/question/CreateQuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/question/CreateQuestionFormController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/model/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/support/context/ContextLoaderListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/qna/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/qna/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jwp/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jwp/model/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +172,7 @@
       <workItem from="1762404324809" duration="3429000" />
       <workItem from="1762415891101" duration="7758000" />
       <workItem from="1762432897270" duration="11721000" />
+      <workItem from="1762486354669" duration="2927000" />
     </task>
     <task id="LOCAL-00001" summary="2단계">
       <option name="closed" value="true" />
@@ -200,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761827646974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="6주차">
+      <option name="closed" value="true" />
+      <created>1762486423915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762486423915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +221,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2단계" />
-    <option name="LAST_COMMIT_MESSAGE" value="2단계" />
+    <MESSAGE value="6주차" />
+    <option name="LAST_COMMIT_MESSAGE" value="6주차" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

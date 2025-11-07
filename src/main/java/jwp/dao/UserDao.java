@@ -24,7 +24,6 @@ public class UserDao {
         em.merge(user);
     }
 
-
     public List<User> findAll() {
         return em.createQuery("select u from User u", User.class).getResultList();
     }

@@ -94,38 +94,6 @@ public class QuestionController {
         }
     }
 
-//    @PostMapping("/update")
-//    public String qnaUpdateQuestion(@RequestParam("questionId") String questionId, @RequestParam("title") String title,
-//                                    @RequestParam("contents") String contents,
-//                                    HttpSession session) throws Exception {
-//        if (!UserSessionUtils.isLogined(session)) {
-//            return "redirect:/users/loginForm";
-//        }
-//
-//        User user = UserSessionUtils.getUserFromSession(session);
-//        Question question = questionDao.findByQuestionId(Integer.parseInt(questionId));
-//        if (!question.isSameUser(user)) {
-//            throw new IllegalArgumentException("로그인된 유저와 질문 작성자가 다르면 질문을 수정할 수 없습니다.");
-//        }
-//        question.updateTitleAndContent(title, contents);
-//        questionDao.update(question);
-//        return "redirect:/";
-//    }
-//
-//    @GetMapping("/updateForm")
-//    public String qnaUpdateForm(HttpSession session, @RequestParam("questionId") String questionId, Model model) throws Exception {
-//        if (!UserSessionUtils.isLogined(session)) {          // 회원만 질문 등록 가능
-//            return "redirect:/user/loginForm";
-//        }
-//        Question question = questionDao.findByQuestionId(Integer.parseInt(questionId));
-//        User user = UserSessionUtils.getUserFromSession(session);
-//        if (!question.isSameUser(user)) {
-//            throw new IllegalArgumentException();
-//        }
-//        model.addAttribute("question", question);
-//        return "qna/updateForm";
-//    }
-
     @GetMapping("/delete")
     public String qnaDelete(@RequestParam("questionId") Long questionId, HttpSession session) {
         if (questionId == null) {
