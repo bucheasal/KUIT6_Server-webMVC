@@ -1,0 +1,88 @@
+Index: java-webMVC.iws
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"1884baa1-5422-44dd-8775-e4befca084b5\" name=\"변경\" comment=\"2단계\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/ShowController.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/question/CreateQuestionController.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/question/CreateQuestionFormController.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/jwp/dao/QuestionQueryEnum.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/jwp/model/KeyHolder.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/jwp/model/Question.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/java-webMVC.iws\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/java-webMVC.iws\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/core/jdbc/SelectJdbcTemplate.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/core/jdbc/SelectJdbcTemplate.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/core/jdbc/UpdateJdbcTemplate.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/core/jdbc/UpdateJdbcTemplate.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/core/mvc/DispatcherServlet.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/core/mvc/DispatcherServlet.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/core/mvc/RequestMapping.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/core/mvc/RequestMapping.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/controller/CreateUserController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/CreateUserController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/controller/ListUserController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/ListUserController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/dao/QueryEnum.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/dao/UserQueryEnum.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/webapp/home.jsp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/webapp/home.jsp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/webapp/qna/form.jsp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/webapp/qna/form.jsp\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/webapp/qna/show.jsp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/webapp/qna/show.jsp\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"java-webMVC\" type=\"f1a62948:ProjectNode\" />\n              </path>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"java-webMVC\" type=\"f1a62948:ProjectNode\" />\n                <item name=\"Tasks\" type=\"e4a08cd1:TasksNode\" />\n              </path>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"java-webMVC\" type=\"f1a62948:ProjectNode\" />\n                <item name=\"Dependencies\" type=\"6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Enum\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"importingSettings\">\n      <MavenImportingSettings>\n        <option name=\"jdkForImporter\" value=\"17\" />\n      </MavenImportingSettings>\n    </option>\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"34deUAeR9etdUjy5LyZ7xIa7HZM\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Gradle.KUIT6_Server-webMVC [:WebServerLauncher.main()].executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;bucheasal2&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n      <recent name=\"$PROJECT_DIR$/tomcat.8080\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409\" />\n        <option value=\"bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\n      <changelist id=\"1884baa1-5422-44dd-8775-e4befca084b5\" name=\"변경\" comment=\"\" />\n      <created>1761547889422</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1761547889422</updated>\n      <workItem from=\"1761547890689\" duration=\"10485000\" />\n      <workItem from=\"1761717647124\" duration=\"9646000\" />\n      <workItem from=\"1761729540042\" duration=\"2719000\" />\n      <workItem from=\"1761795962898\" duration=\"26637000\" />\n      <workItem from=\"1761837380758\" duration=\"1283000\" />\n      <workItem from=\"1761842712900\" duration=\"15996000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"2단계\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1761827646974</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1761827646974</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"upstream/step2-mvc-completed\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"2단계\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"2단계\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java-webMVC.iws b/java-webMVC.iws
+--- a/java-webMVC.iws	(revision ac369fa778bae800891626c586cd24ec2acdf563)
++++ b/java-webMVC.iws	(date 1761895379233)
+@@ -4,31 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1884baa1-5422-44dd-8775-e4befca084b5" name="변경" comment="2단계">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/ShowController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/question/CreateQuestionController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/question/CreateQuestionFormController.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionDao.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/QuestionQueryEnum.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/model/KeyHolder.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/jwp/model/Question.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/java-webMVC.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.iws" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/SelectJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/jdbc/SelectJdbcTemplate.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/core/jdbc/UpdateJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/jdbc/UpdateJdbcTemplate.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/core/mvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/mvc/DispatcherServlet.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/core/mvc/RequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/mvc/RequestMapping.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/CreateUserController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/HomeController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/ListUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/ListUserController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/UpdateUserFormController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/QueryEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/UserQueryEnum.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dao/UserDao.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/home.jsp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/webapp/qna/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/qna/form.jsp" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/webapp/qna/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/qna/show.jsp" afterDir="false" />
+-    </list>
++    <list default="true" id="1884baa1-5422-44dd-8775-e4befca084b5" name="변경" comment="다듬기" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -141,7 +117,7 @@
+       <workItem from="1761729540042" duration="2719000" />
+       <workItem from="1761795962898" duration="26637000" />
+       <workItem from="1761837380758" duration="1283000" />
+-      <workItem from="1761842712900" duration="15996000" />
++      <workItem from="1761842712900" duration="16398000" />
+     </task>
+     <task id="LOCAL-00001" summary="2단계">
+       <option name="closed" value="true" />
+@@ -151,7 +127,23 @@
+       <option name="project" value="LOCAL" />
+       <updated>1761827646974</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="3단계">
++      <option name="closed" value="true" />
++      <created>1761894983580</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1761894983580</updated>
++    </task>
++    <task id="LOCAL-00003" summary="다듬기">
++      <option name="closed" value="true" />
++      <created>1761895181478</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1761895181478</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -182,7 +174,9 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="2단계" />
+-    <option name="LAST_COMMIT_MESSAGE" value="2단계" />
++    <MESSAGE value="3단계" />
++    <MESSAGE value="다듬기" />
++    <option name="LAST_COMMIT_MESSAGE" value="다듬기" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />

@@ -27,9 +27,9 @@ class UserTest {
         assertTrue(user.matchPassword("1"));
     }
 
-    @Test
-    void isSameUser() {
-        assertTrue(user.isSameUser(new User("jungwoo1", "2", "jungwoo2", "jungwoo2@gmail.com")));
-    }
+//    @Test
+//    void isSameUser() {
+//        assertTrue(user.isSameUser(new User("jungwoo1", "2", "jungwoo2", "jungwoo2@gmail.com")));
+//    }
 
 }

@@ -1,6 +1,18 @@
 package jwp.model;
 
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "USERS")
+@NoArgsConstructor //JPA Entity는 기본 생성자 필수
+@Setter
 public class User {
+    @Id //primary key
     private String userId;
     private String password;
     private String name;
@@ -11,6 +23,11 @@ public class User {
         this.password = password;
         this.name = name;
         this.email = email;
+    }
+
+    public User(String userId, String password) {
+        this.userId = userId;
+        this.password = password;
     }
 
     public String getUserId() {
@@ -44,11 +61,11 @@ public class User {
     }
 
     public boolean isSameUser(User user) {
-        return isSameUser(user.getUserId());
+        return isSameUser(user.getUserId(), user.getPassword());
     }
 
-    public boolean isSameUser(String userId) {
-        return userId.equals(this.userId);
+    public boolean isSameUser(String userId, String password) {
+        return userId.equals(this.userId) && matchPassword(password);
     }
 
     @Override
