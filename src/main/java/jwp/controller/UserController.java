@@ -39,7 +39,7 @@ public class UserController {
     }
 
     @PostMapping("/update")
-    public String updateUser(@ModelAttribute User user, HttpSession session) {
+    public String updateUser(@ModelAttribute User user) {
         userDao.update(user);
         return "redirect:/user/list";
     }
@@ -72,7 +72,7 @@ public class UserController {
 
     @PostMapping("/login")
     public String login(HttpSession session, @RequestParam("userId") String userId,
-                        @RequestParam("password") String password) throws Exception {
+                        @RequestParam("password") String password) {
         User loginUser = new User(userId, password);
         User user = userDao.findByUserId(userId);
         if (user != null && user.isSameUser(loginUser)) {
@@ -87,7 +87,7 @@ public class UserController {
         return "user/loginFailed";
     }
     @GetMapping("/logout")
-    public String logout(HttpSession session) throws Exception {
+    public String logout(HttpSession session){
         session.removeAttribute("user");
         return "redirect:/";
     }

@@ -22,7 +22,7 @@ public class QuestionController {
     private final QuestionDao questionDao;
 
     @GetMapping("/show")
-    public String qnaShow(@RequestParam("questionId") Long questionId, Model model) throws Exception {
+    public String qnaShow(@RequestParam("questionId") Long questionId, Model model)  {
         if (questionId == null) {
             return "redirect:/";
         }
@@ -40,7 +40,7 @@ public class QuestionController {
     @GetMapping("/form")
     public String qnaCreateForm(HttpSession session,
                                 @RequestParam(value = "questionId", required = false) Long questionId,
-                                Model model) throws Exception {
+                                Model model) {
         if (!UserSessionUtils.isLogined(session)) {
             return "redirect:/user/loginForm";
         }
