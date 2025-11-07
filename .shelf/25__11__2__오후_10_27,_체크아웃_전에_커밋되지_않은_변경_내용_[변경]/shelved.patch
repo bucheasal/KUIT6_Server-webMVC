@@ -1,0 +1,198 @@
+Index: java-webMVC.iws
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"7bffe7af-6541-468e-bc06-37329b06416d\" name=\"변경\" comment=\"리펙토링 : enum클래스, RequestMapper to singleton pattern\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"java-webMVC\" type=\"f1a62948:ProjectNode\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"KubernetesApiPersistence\">{}</component>\n  <component name=\"KubernetesApiProvider\">{\n  &quot;isMigrated&quot;: true\n}</component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 5\n}]]></component>\n  <component name=\"ProjectId\" id=\"34dWLthoQfamBfPdBBQmmGOwgfr\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"bucheasal 리베이스 중\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"reference.settingsdialog.project.gradle\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"core.web.filter\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\n      <module name=\"java-webMVC\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\n      <module name=\"java-webMVC\" />\n      <option name=\"filePath\" />\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409\" />\n        <option value=\"bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"디폴트 작업\">\n      <changelist id=\"7bffe7af-6541-468e-bc06-37329b06416d\" name=\"변경\" comment=\"리펙토링 : enum클래스, RequestMapper to singleton pattern\" />\n      <created>1761543877453</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1761543877453</updated>\n      <workItem from=\"1761543878742\" duration=\"25000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"upstream/main\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java-webMVC.iws b/java-webMVC.iws
+--- a/java-webMVC.iws	(revision fb68667f1983e60b85fa290379f45d184912f599)
++++ b/java-webMVC.iws	(date 1762089806953)
+@@ -4,7 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="7bffe7af-6541-468e-bc06-37329b06416d" name="변경" comment="리펙토링 : enum클래스, RequestMapper to singleton pattern" />
++    <list default="true" id="7bffe7af-6541-468e-bc06-37329b06416d" name="변경" comment="리펙토링 : enum클래스, RequestMapper to singleton pattern">
++      <change beforePath="$PROJECT_DIR$/java-webMVC.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.ipr" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/java-webMVC.iws" beforeDir="false" afterPath="$PROJECT_DIR$/java-webMVC.iws" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/core/web/filter/CharacterEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/web/filter/CharacterEncodingFilter.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/core/web/filter/ResourceFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/web/filter/ResourceFilter.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginFailedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/controller/LoginFailedController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/jwp/dispatcher/RequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jwp/dispatcher/RequestMapper.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -41,24 +48,28 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="RESET_MODE" value="HARD" />
+   </component>
+   <component name="KubernetesApiPersistence">{}</component>
+   <component name="KubernetesApiProvider">{
+   &quot;isMigrated&quot;: true
+ }</component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 5
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 5
++}</component>
+   <component name="ProjectId" id="34dWLthoQfamBfPdBBQmmGOwgfr" />
+   <component name="ProjectViewState">
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
++    "Gradle.KUIT6_Server-webMVC [:WebServerLauncher.main()].executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "bucheasal 리베이스 중",
++    "git-widget-placeholder": "bucheasal",
+     "kotlin-language-version-configured": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
+     "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
+     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+@@ -70,19 +81,6 @@
+       <recent name="core.web.filter" />
+     </key>
+   </component>
+-  <component name="RunManager">
+-    <configuration default="true" type="JetRunConfigurationType">
+-      <module name="java-webMVC" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+-      <module name="java-webMVC" />
+-      <option name="filePath" />
+-      <method v="2" />
+-    </configuration>
+-  </component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -99,6 +97,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1761543877453</updated>
+       <workItem from="1761543878742" duration="25000" />
++      <workItem from="1762089194543" duration="611000" />
+     </task>
+     <servers />
+   </component>
+Index: java-webMVC.ipr
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CompilerConfiguration\">\n    <wildcardResourcePatterns>\n      <entry name=\"!?*.class\" />\n      <entry name=\"!?*.scala\" />\n      <entry name=\"!?*.groovy\" />\n      <entry name=\"!?*.java\" />\n    </wildcardResourcePatterns>\n    <bytecodeTargetLevel target=\"17\" />\n  </component>\n  <component name=\"DependencyValidationManager\">\n    <option name=\"SKIP_IMPORT_STATEMENTS\" value=\"false\" />\n  </component>\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleJvm\" value=\"17\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n  <component name=\"InspectionProjectProfileManager\">\n    <profile version=\"1.0\">\n      <option name=\"myName\" value=\"Project Default\" />\n    </profile>\n    <version value=\"1.0\" />\n  </component>\n  <component name=\"ProjectModuleManager\">\n    <modules>\n      <module fileurl=\"file://$PROJECT_DIR$/java-webMVC.iml\" filepath=\"$PROJECT_DIR$/java-webMVC.iml\" />\n      <module fileurl=\"file://$PROJECT_DIR$/java-webMVC.main.iml\" filepath=\"$PROJECT_DIR$/java-webMVC.main.iml\" />\n      <module fileurl=\"file://$PROJECT_DIR$/java-webMVC.test.iml\" filepath=\"$PROJECT_DIR$/java-webMVC.test.iml\" />\n    </modules>\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" project-jdk-name=\"21\" project-jdk-type=\"JavaSDK\">\n    <output url=\"file://$PROJECT_DIR$/webapp/WEB-INF/classes\" />\n  </component>\n  <component name=\"VcsDirectoryMappings\">\n    <mapping directory=\"\" vcs=\"Git\" />\n  </component>\n  <component name=\"libraryTable\">\n    <library name=\"Gradle: com.fasterxml.jackson.core:jackson-annotations:2.12.7\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"com.fasterxml.jackson.core\" artifactId=\"jackson-annotations\" version=\"2.12.7\" baseVersion=\"2.12.7\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.7/2042461b754cd65ab2dd74a9f19f442b54625f19/jackson-annotations-2.12.7.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: com.fasterxml.jackson.core:jackson-core:2.12.7\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"com.fasterxml.jackson.core\" artifactId=\"jackson-core\" version=\"2.12.7\" baseVersion=\"2.12.7\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.7/4669a54b799c105572aa8de2a1ae0fe64a17745/jackson-core-2.12.7.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: com.fasterxml.jackson.core:jackson-databind:2.12.7.1\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"com.fasterxml.jackson.core\" artifactId=\"jackson-databind\" version=\"2.12.7.1\" baseVersion=\"2.12.7.1\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.7.1/48d6674adb5a077f2c04b42795e2e7624997b8b9/jackson-databind-2.12.7.1.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: com.google.code.findbugs:jsr305:3.0.2\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"com.google.code.findbugs\" artifactId=\"jsr305\" version=\"3.0.2\" baseVersion=\"3.0.2\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: com.google.protobuf:protobuf-java:3.11.4\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"com.google.protobuf\" artifactId=\"protobuf-java\" version=\"3.11.4\" baseVersion=\"3.11.4\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.11.4/7ec0925cc3aef0335bbc7d57edfd42b0f86f8267/protobuf-java-3.11.4.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: com.h2database:h2:2.1.214\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"com.h2database\" artifactId=\"h2\" version=\"2.1.214\" baseVersion=\"2.1.214\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/2.1.214/d5c2005c9e3279201e12d4776c948578b16bf8b2/h2-2.1.214.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: commons-logging:commons-logging:1.2\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"commons-logging\" artifactId=\"commons-logging\" version=\"1.2\" baseVersion=\"1.2\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: javax.servlet:jstl:1.2\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"javax.servlet\" artifactId=\"jstl\" version=\"1.2\" baseVersion=\"1.2\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: mysql:mysql-connector-java:8.0.28\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"mysql\" artifactId=\"mysql-connector-java\" version=\"8.0.28\" baseVersion=\"8.0.28\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.28/33678b1729d4f832b9e4bcb2d5bbd67940920a7a/mysql-connector-java-8.0.28.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.apache.commons:commons-dbcp2:2.6.0\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apache.commons\" artifactId=\"commons-dbcp2\" version=\"2.6.0\" baseVersion=\"2.6.0\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-dbcp2/2.6.0/78d0e99c4bc815a9f20cf6837761e91b7fc6eef4/commons-dbcp2-2.6.0.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.apache.commons:commons-pool2:2.6.1\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apache.commons\" artifactId=\"commons-pool2\" version=\"2.6.1\" baseVersion=\"2.6.1\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.6.1/4a285ecdea96fd7b621091b334224c527ae420fb/commons-pool2-2.6.1.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.apache.tomcat.embed:tomcat-embed-core:8.5.42\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apache.tomcat.embed\" artifactId=\"tomcat-embed-core\" version=\"8.5.42\" baseVersion=\"8.5.42\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.42/28f493e36727cf549ee67c0052915275bc11bdee/tomcat-embed-core-8.5.42.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.42/374fb280e08a104a36f9e9b7e1ecd92018dcaed9/tomcat-embed-core-8.5.42-sources.jar!/\" />\n      </SOURCES>\n    </library>\n    <library name=\"Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.5.42\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apache.tomcat.embed\" artifactId=\"tomcat-embed-el\" version=\"8.5.42\" baseVersion=\"8.5.42\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.42/6e279fc8730cd11332f1179daae719c0907ad180/tomcat-embed-el-8.5.42.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.apache.tomcat.embed:tomcat-embed-jasper:8.5.42\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apache.tomcat.embed\" artifactId=\"tomcat-embed-jasper\" version=\"8.5.42\" baseVersion=\"8.5.42\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-jasper/8.5.42/df8ba63dc60367d656c3a31299838120518b5963/tomcat-embed-jasper-8.5.42.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.apache.tomcat.embed:tomcat-embed-logging-juli:8.5.2\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apache.tomcat.embed\" artifactId=\"tomcat-embed-logging-juli\" version=\"8.5.2\" baseVersion=\"8.5.2\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-logging-juli/8.5.2/eb8d86e9972274272133c73a976ea744d9086cf1/tomcat-embed-logging-juli-8.5.2.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.apache.tomcat:tomcat-annotations-api:8.5.42\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apache.tomcat\" artifactId=\"tomcat-annotations-api\" version=\"8.5.42\" baseVersion=\"8.5.42\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-annotations-api/8.5.42/a804bbcf454ae7fbf3dec0cd3aa8d7355a3bdd50/tomcat-annotations-api-8.5.42.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.apiguardian:apiguardian-api:1.1.2\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.apiguardian\" artifactId=\"apiguardian-api\" version=\"1.1.2\" baseVersion=\"1.1.2\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.eclipse.jdt:ecj:3.12.3\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.eclipse.jdt\" artifactId=\"ecj\" version=\"3.12.3\" baseVersion=\"3.12.3\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/ecj/3.12.3/ade950992eb3caf6ab4f1a88706c755f0bf213d9/ecj-3.12.3.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.javassist:javassist:3.28.0-GA\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.javassist\" artifactId=\"javassist\" version=\"3.28.0-GA\" baseVersion=\"3.28.0-GA\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.28.0-GA/9a958811a88381bb159cc2f5ed79c34a45c4af7a/javassist-3.28.0-GA.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.junit.jupiter:junit-jupiter-api:5.8.1\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.junit.jupiter\" artifactId=\"junit-jupiter-api\" version=\"5.8.1\" baseVersion=\"5.8.1\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.1/6538b88eb8bf8811bc7b6efb5246f835c15e0bfe/junit-jupiter-api-5.8.1.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.junit.jupiter:junit-jupiter-engine:5.8.1\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.junit.jupiter\" artifactId=\"junit-jupiter-engine\" version=\"5.8.1\" baseVersion=\"5.8.1\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.1/21b86e08aae2720bbf017703669948be96d1388c/junit-jupiter-engine-5.8.1.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.junit.platform:junit-platform-commons:1.8.1\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.junit.platform\" artifactId=\"junit-platform-commons\" version=\"1.8.1\" baseVersion=\"1.8.1\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.1/1e362cbe6d0f225b066757865e233972557484/junit-platform-commons-1.8.1.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.junit.platform:junit-platform-engine:1.8.1\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.junit.platform\" artifactId=\"junit-platform-engine\" version=\"1.8.1\" baseVersion=\"1.8.1\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.1/e6c63bf990dc88a6527b4ed617b23e47048f07e0/junit-platform-engine-1.8.1.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.opentest4j:opentest4j:1.2.0\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.opentest4j\" artifactId=\"opentest4j\" version=\"1.2.0\" baseVersion=\"1.2.0\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.reflections:reflections:0.10.2\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.reflections\" artifactId=\"reflections\" version=\"0.10.2\" baseVersion=\"0.10.2\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reflections/reflections/0.10.2/b638d7ca0e0fe0146b60a0e7ba232ad852a73b31/reflections-0.10.2.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.slf4j:slf4j-api:1.7.32\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.slf4j\" artifactId=\"slf4j-api\" version=\"1.7.32\" baseVersion=\"1.7.32\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.springframework:spring-beans:5.1.8.RELEASE\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.springframework\" artifactId=\"spring-beans\" version=\"5.1.8.RELEASE\" baseVersion=\"5.1.8.RELEASE\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.8.RELEASE/e35fa81d0142ef7c1247a7dee8b1ef2dd78c6322/spring-beans-5.1.8.RELEASE.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.springframework:spring-core:5.1.8.RELEASE\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.springframework\" artifactId=\"spring-core\" version=\"5.1.8.RELEASE\" baseVersion=\"5.1.8.RELEASE\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.8.RELEASE/37fd45c92cfd05b9ad173ee1184ec4221e0f931f/spring-core-5.1.8.RELEASE.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.springframework:spring-jcl:5.1.8.RELEASE\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.springframework\" artifactId=\"spring-jcl\" version=\"5.1.8.RELEASE\" baseVersion=\"5.1.8.RELEASE\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.1.8.RELEASE/60a3bb9c802ea03c955ee26526f8aebc9dd712b6/spring-jcl-5.1.8.RELEASE.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.springframework:spring-jdbc:5.1.8.RELEASE\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.springframework\" artifactId=\"spring-jdbc\" version=\"5.1.8.RELEASE\" baseVersion=\"5.1.8.RELEASE\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.1.8.RELEASE/bf8affe2ce53e92e22bf3e2b85dfcbcde089bd0a/spring-jdbc-5.1.8.RELEASE.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.springframework:spring-test:5.1.8.RELEASE\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.springframework\" artifactId=\"spring-test\" version=\"5.1.8.RELEASE\" baseVersion=\"5.1.8.RELEASE\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.1.8.RELEASE/2a629b975a2815772b947686d4936a5c764fe4f6/spring-test-5.1.8.RELEASE.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.springframework:spring-tx:5.1.8.RELEASE\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.springframework\" artifactId=\"spring-tx\" version=\"5.1.8.RELEASE\" baseVersion=\"5.1.8.RELEASE\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.1.8.RELEASE/a4941bf2e1a32e2d102dfeff8d542db8fd99a912/spring-tx-5.1.8.RELEASE.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n    <library name=\"Gradle: org.springframework:spring-web:5.1.8.RELEASE\" type=\"java-imported\" external-system-id=\"GRADLE\">\n      <properties groupId=\"org.springframework\" artifactId=\"spring-web\" version=\"5.1.8.RELEASE\" baseVersion=\"5.1.8.RELEASE\" />\n      <CLASSES>\n        <root url=\"jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.8.RELEASE/6d7134733f05133d82440172c5f6f9fe001db7ed/spring-web-5.1.8.RELEASE.jar!/\" />\n      </CLASSES>\n      <JAVADOC />\n      <SOURCES />\n    </library>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/java-webMVC.ipr b/java-webMVC.ipr
+--- a/java-webMVC.ipr	(revision fb68667f1983e60b85fa290379f45d184912f599)
++++ b/java-webMVC.ipr	(date 1762089355935)
+@@ -13,6 +13,9 @@
+     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+   </component>
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="FrameworkDetectionExcludesConfiguration">
++    <file type="web" url="file://$PROJECT_DIR$" />
++  </component>
+   <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+@@ -24,6 +27,7 @@
+             <option value="$PROJECT_DIR$" />
+           </set>
+         </option>
++        <option name="resolveExternalAnnotations" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+@@ -43,6 +47,23 @@
+   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="21" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/webapp/WEB-INF/classes" />
+   </component>
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="MavenRepo" />
++      <option name="name" value="MavenRepo" />
++      <option name="url" value="https://repo.maven.apache.org/maven2/" />
++    </remote-repository>
++  </component>
+   <component name="VcsDirectoryMappings">
+     <mapping directory="" vcs="Git" />
+   </component>
+@@ -57,6 +78,9 @@
+     </library>
+     <library name="Gradle: com.fasterxml.jackson.core:jackson-core:2.12.7" type="java-imported" external-system-id="GRADLE">
+       <properties groupId="com.fasterxml.jackson.core" artifactId="jackson-core" version="2.12.7" baseVersion="2.12.7" />
++      <ANNOTATIONS>
++        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/externalAnnotations/com/fasterxml/jackson/core/jackson-core/2.9.6-an1/jackson-core-2.9.6-an1-annotations.zip!/" />
++      </ANNOTATIONS>
+       <CLASSES>
+         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.7/4669a54b799c105572aa8de2a1ae0fe64a17745/jackson-core-2.12.7.jar!/" />
+       </CLASSES>
+@@ -65,6 +89,9 @@
+     </library>
+     <library name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.12.7.1" type="java-imported" external-system-id="GRADLE">
+       <properties groupId="com.fasterxml.jackson.core" artifactId="jackson-databind" version="2.12.7.1" baseVersion="2.12.7.1" />
++      <ANNOTATIONS>
++        <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/externalAnnotations/com/fasterxml/jackson/core/jackson-databind/2.9.6-an1/jackson-databind-2.9.6-an1-annotations.zip!/" />
++      </ANNOTATIONS>
+       <CLASSES>
+         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.7.1/48d6674adb5a077f2c04b42795e2e7624997b8b9/jackson-databind-2.12.7.1.jar!/" />
+       </CLASSES>
+Index: src/main/java/jwp/dispatcher/RequestMapper.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package jwp.dispatcher;\n\nimport jwp.controller.*;\n\nimport java.util.HashMap;\nimport java.util.Map;\n\nimport static core.url.UrlPath.*;\n\npublic class RequestMapper {\n    private static final Map<String, Controller> controller = new HashMap<>();\n    private static final RequestMapper requestMapper = new RequestMapper();\n    private RequestMapper() {\n        controller.put(EMPTY.route, new HomeController());\n        controller.put(HOME.route, new HomeController());\n        controller.put(SIGNUP.route, new CreateUserController());\n        controller.put(LIST.route, new ListUserController());\n        controller.put(LOGIN.route, new LoginController());\n        controller.put(LOGOUT.route, new LogoutController());\n        controller.put(UPDATE.route, new UpdateUserController());\n        controller.put(UPDATEFORM.route, new UpdateUserFormController());\n        controller.put(LOGINFAILED.route, new LoginFailedController());\n    }\n\n    public static RequestMapper getRequestMapper() {\n        return requestMapper;\n    }\n\n    public Controller getController(String path) {\n        return controller.get(path);\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/jwp/dispatcher/RequestMapper.java b/src/main/java/jwp/dispatcher/RequestMapper.java
+--- a/src/main/java/jwp/dispatcher/RequestMapper.java	(revision fb68667f1983e60b85fa290379f45d184912f599)
++++ b/src/main/java/jwp/dispatcher/RequestMapper.java	(date 1762089680600)
+@@ -1,5 +1,7 @@
+ package jwp.dispatcher;
+ 
++
++import core.mvc.Controller;
+ import jwp.controller.*;
+ 
+ import java.util.HashMap;
+Index: src/main/java/jwp/controller/LoginFailedController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package jwp.controller;\n\nimport javax.servlet.ServletException;\nimport javax.servlet.http.HttpServletRequest;\nimport javax.servlet.http.HttpServletResponse;\nimport java.io.IOException;\n\nimport static core.url.UrlPath.LOGINFAILED;\n\npublic class LoginFailedController implements Controller {\n    @Override\n    public String proceed(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {\n        return LOGINFAILED.route;\n    }\n}\n
+===================================================================
+diff --git a/src/main/java/jwp/controller/LoginFailedController.java b/src/main/java/jwp/controller/LoginFailedController.java
+--- a/src/main/java/jwp/controller/LoginFailedController.java	(revision fb68667f1983e60b85fa290379f45d184912f599)
++++ b/src/main/java/jwp/controller/LoginFailedController.java	(date 1762089759481)
+@@ -4,12 +4,11 @@
+ import javax.servlet.http.HttpServletRequest;
+ import javax.servlet.http.HttpServletResponse;
+ import java.io.IOException;
+-
++import core.mvc.Controller;
+ import static core.url.UrlPath.LOGINFAILED;
+ 
+ public class LoginFailedController implements Controller {
+-    @Override
+-    public String proceed(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
++    public String execute(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+         return LOGINFAILED.route;
+     }
+ }

@@ -1,0 +1,36 @@
+Index: src/main/java/core/web/filter/CharacterEncodingFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package core.web.filter;\n\nimport javax.servlet.*;\nimport javax.servlet.annotation.WebFilter;\nimport java.io.IOException;\nimport java.util.logging.Filter;\n\n@WebFilter(\"/*\")\npublic class CharacterEncodingFilter implements Filter {\n    private static final String DEFAULT_ENCODING = \"UTF-8\";\n\n    @Override\n    public void init(FilterConfig filterConfig) throws ServletException {\n    }\n\n    @Override\n    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)\n            throws IOException, ServletException {\n        request.setCharacterEncoding(DEFAULT_ENCODING);\n        response.setCharacterEncoding(DEFAULT_ENCODING);\n        chain.doFilter(request, response);\n\n    }\n\n    @Override\n    public void destroy() {\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/core/web/filter/CharacterEncodingFilter.java b/src/main/java/core/web/filter/CharacterEncodingFilter.java
+--- a/src/main/java/core/web/filter/CharacterEncodingFilter.java	(revision fb68667f1983e60b85fa290379f45d184912f599)
++++ b/src/main/java/core/web/filter/CharacterEncodingFilter.java	(date 1762089415856)
+@@ -3,7 +3,6 @@
+ import javax.servlet.*;
+ import javax.servlet.annotation.WebFilter;
+ import java.io.IOException;
+-import java.util.logging.Filter;
+ 
+ @WebFilter("/*")
+ public class CharacterEncodingFilter implements Filter {
+Index: src/main/java/core/web/filter/ResourceFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package core.web.filter;\n\n\nimport javax.servlet.*;\nimport javax.servlet.annotation.WebFilter;\nimport javax.servlet.http.HttpServletRequest;\nimport java.io.IOException;\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.logging.Filter;\nimport java.util.logging.Level;\nimport java.util.logging.Logger;\n\n@WebFilter(\"/*\")\npublic class ResourceFilter implements Filter {\n    private static final Logger logger = Logger.getLogger(ResourceFilter.class.getName());\n    private static final List<String> resourcePrefixs = new ArrayList<>();\n    static {\n        resourcePrefixs.add(\"/css\");\n        resourcePrefixs.add(\"/js\");\n        resourcePrefixs.add(\"/fonts\");\n        resourcePrefixs.add(\"/img\");\n        resourcePrefixs.add(\"/favicon.ico\");\n    }\n\n    private RequestDispatcher defaultRequestDispatcher;\n\n    @Override\n    public void init(FilterConfig filterConfig) throws ServletException {\n        this.defaultRequestDispatcher = filterConfig.getServletContext().getNamedDispatcher(\"default\");\n    }\n\n    @Override\n    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)\n            throws IOException, ServletException {\n        HttpServletRequest req = (HttpServletRequest) request;\n        String path = req.getRequestURI().substring(req.getContextPath().length());\n        if (isResourceUrl(path)) {\n            logger.log(Level.INFO, \"path: \"+ path);\n            defaultRequestDispatcher.forward(request, response);\n        } else {\n            chain.doFilter(request, response);\n        }\n    }\n\n    private boolean isResourceUrl(String url) {\n        for (String prefix : resourcePrefixs) {\n            if (url.startsWith(prefix)) {\n                return true;\n            }\n        }\n        return false;\n    }\n\n    @Override\n    public void destroy() {\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/core/web/filter/ResourceFilter.java b/src/main/java/core/web/filter/ResourceFilter.java
+--- a/src/main/java/core/web/filter/ResourceFilter.java	(revision fb68667f1983e60b85fa290379f45d184912f599)
++++ b/src/main/java/core/web/filter/ResourceFilter.java	(date 1762089444598)
+@@ -7,7 +7,6 @@
+ import java.io.IOException;
+ import java.util.ArrayList;
+ import java.util.List;
+-import java.util.logging.Filter;
+ import java.util.logging.Level;
+ import java.util.logging.Logger;
+ 
