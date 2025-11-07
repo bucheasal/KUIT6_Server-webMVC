@@ -13,6 +13,7 @@
         <div class="panel panel-default content-main">
             <c:url value="/qna/create" var="createUrl"/>
             <form name="question" method="post" action="${createUrl}">
+                <input type="hidden" name="questionId" value="${question.questionId}" />
                 <div class="form-group">
                     <label for="writer">글쓴이</label>
                     <input type="text" class="form-control" value="${sessionScope.user.userId}" id="writer"

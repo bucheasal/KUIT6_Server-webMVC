@@ -8,8 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-import static jwp.dao.UserQueryEnum.*;
-
 @Repository
 @RequiredArgsConstructor
 public class UserDao {
@@ -21,6 +19,7 @@ public class UserDao {
         em.persist(user);
     }
 
+    @Transactional
     public void update(User user) {
         em.merge(user);
     }
